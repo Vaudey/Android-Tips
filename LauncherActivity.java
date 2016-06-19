@@ -1,4 +1,3 @@
-package com.example.huco.appbrainstorming.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,10 +7,7 @@ import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.example.huco.appbrainstorming.R;
-
 public class LauncherActivity  extends AppCompatActivity {
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,11 +19,8 @@ public class LauncherActivity  extends AppCompatActivity {
         launchSplashScreen();
     }
 
-
     private void launchSplashScreen() {
-
         int SPLASH_DISPLAY_LENGTH = 1500;
-
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -37,7 +30,21 @@ public class LauncherActivity  extends AppCompatActivity {
             }
         }, SPLASH_DISPLAY_LENGTH);
     }
-
-
-
 }
+
+
+
+/* Android Manifest */
+
+/* 
+ <activity
+ android:name=".activity.LauncherActivity"
+ android:label="@string/app_name"
+ android:theme="@style/AppTheme"
+ android:screenOrientation="portrait">
+ <intent-filter>
+ <action android:name="android.intent.action.MAIN" />
+ <category android:name="android.intent.category.LAUNCHER" />
+ </intent-filter>
+ </activity>
+ */
