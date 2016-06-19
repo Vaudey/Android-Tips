@@ -47,4 +47,10 @@ public class LauncherActivity  extends AppCompatActivity {
  <category android:name="android.intent.category.LAUNCHER" />
  </intent-filter>
  </activity>
+ 
+ 
+ <activity android:label="@string/app_name"
+ android:theme="@style/AppTheme"
+ android:name=".MainActivity"
+ android:screenOrientation="portrait"/>
  */
